@@ -23,12 +23,10 @@
 }
 
 @media only screen and (min-width: $vp-medium) {
-  .grid-container-zweispalter{
-  }
-}
-
-@media only screen and (min-width: $vp-medium) {
   .grid-container{
+    grid-template-columns: 1fr;
+  }
+  .grid-container-zweispalter{
     grid-template-columns: 1fr;
   }
 }
@@ -37,10 +35,16 @@
   .grid-container{
     grid-template-columns: 1fr 1fr;
   }
+  .grid-container-zweispalter{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: $vp-xlarge) {
   .grid-container{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;;
+  }
+  .grid-container-zweispalter{
+    grid-template-columns: 1fr 1fr;
   }
 }

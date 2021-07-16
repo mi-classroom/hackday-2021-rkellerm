@@ -4,7 +4,14 @@ body {
   padding: $s;
   font-family: $font-sans-serif;
   color: $light;
-  
+}
+
+@media only screen and (min-width: $vp-xlarge) {
+  body {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $vp-xlarge;
+  }
 }
 
 html {
