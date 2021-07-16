@@ -12,12 +12,42 @@ braucht:
   $caption(:String): Bildunterschrift (optional)
 -->
 
+  <div>
     <figure class="image-with-caption">
       <img
         src="http://lucascranach.org/thumbnails/DK_SMK_KMSsp721_FR414B/01_Overall/DK_SMK_KMSsp721_FR414B_2013-09-27_Overall.jpg"
         srcset="http://lucascranach.org/thumbnails/DK_SMK_KMSsp721_FR414B/01_Overall/DK_SMK_KMSsp721_FR414B_2013-09-27_Overall.jpg 500w, http://lucascranach.org/thumbnails/CH_KMB_177a_FR187-188/01_Overall/CH_KMB_177a_FR187-188_2010-03_Overall.jpg 600w, http://lucascranach.org/thumbnails/US_MIA_57-10_FR128/01_Overall/US_MIA_57-10_FR128_2012_Overall.jpg 700w"
         sizes="(min-width: 50em) 33vw, (min-width: 28em) 50vw, 100vw" alt="Bildnis Anna Buchner, geborene Lindacker">
     </figure>
+    <div class="metadata-form-wrapper">
+      <form id="metadata-form">
+        <div class="form-block">
+          <input type="text" id="filetype" name="filetype">
+          <label for="filetype">Dateiart</label>
+        </div>
+        <div class="form-block">
+          <input type="text" id="description" name="description">
+          <label for="description">Beschreibung</label>
+        </div>
+        <div class="form-block">
+          <textarea rows="4" id="figrights" name="figrights" ></textarea>
+          <label for="figrights">Abbildung Rechte</label>
+        </div>
+        <div class="form-block">
+          <input type="text" id="figsource" name="figsource">
+          <label for="figsource">Abbildung Quelle</label>
+        </div>
+        <div class="form-block">
+          <input type="text" id="date" name="date" placeholder="tt.mm.jjjj" class="nofill">
+          <label for="date">Datum</label>
+        </div>
+        <div class="form-buttons">
+          <button type="reset">abbrechen</button>
+          <button type="submit">speichern</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
     <!--
 Doku: tbd.

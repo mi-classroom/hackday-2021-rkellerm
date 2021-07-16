@@ -29,3 +29,10 @@ a {
   color: $accent;
   text-decoration: none;
 }
+
+input, textarea {
+  color: $lighter;
+  background-color: $dark;
+  border-width: 0;
+  padding: $xs;
+}
