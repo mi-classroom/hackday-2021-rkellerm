@@ -26,3 +26,21 @@
   .grid-container-zweispalter{
   }
 }
+
+@media only screen and (min-width: $vp-medium) {
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: $vp-large) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: $vp-xlarge) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
