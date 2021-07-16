@@ -3,19 +3,30 @@
 
 function formValidator() { 
 
+  const validate = function (field, validationFn) {
+    const error = validationFn(field.value)
+    const errorClass = "ut-has-error"
+    if (error) {
+      field.classList.add(errorClass)
+    } else {
+      field.classList.remove(errorClass)
+    }
+  }
+
   let checkForm = function (form) {
     
-    console.log(form);
+    // console.log(form);
 
-    /* Hier bitte die Validierung einfügen 
-    
-    …
-    …
-    …
-
-    */
+   const required = value => value ? undefined : "Pflichtfeld"
+   validate(form["filetype"], required)
+   validate(form["description"], required)
+   validate(form["figrights"], required)
+   validate(form["figsource"], required)
+   validate(form["date"], required)
     
   }
+
+
 
   this.scan = function () { 
     document.querySelectorAll('form[data-js-validate=true]').forEach(function (form) {  
