@@ -65,6 +65,7 @@
   overflow: hidden;
   background-color: #000;
   position: relative;
+  width: 100%;
   
   >img {
     width: 100%;
@@ -184,4 +185,40 @@
     dt[data-target] + dd.is-open{
     }
   }
+}
+
+#metadata-form {
+  margin-top: 1rem;
+
+  >.form-block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+    >* {
+      flex: 1;
+    }
+
+    >.nofill {
+      display: inline-block;
+      flex: 0;
+      max-width: 200px;
+    }
+
+    >label {
+      margin-top: 5px;
+      font-size: 1.1rem;
+    }
+  }
+
+  >.form-buttons {
+    margin-top: $m;
+
+    >button {
+      background-color: $accent;
+      border-width: 0;
+      padding: $xs / 2 $xs;
+    }
+  }
+  
 }
